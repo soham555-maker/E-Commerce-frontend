@@ -21,7 +21,7 @@ const LoginSignup = () => {
     e.preventDefault();
 
     try {
-      const endpoint = isLogin ? 'http://localhost:4000/login' : 'http://localhost:4000/signup';
+      const endpoint = isLogin ? 'https://e-commerce-backend-dw6l.onrender.com/login' : 'https://e-commerce-backend-dw6l.onrender.com/signup';
 console.log(formData)
       const response = await axios.post(endpoint, formData);
 

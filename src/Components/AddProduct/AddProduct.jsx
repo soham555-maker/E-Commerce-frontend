@@ -38,7 +38,7 @@ const AddProduct = () => {
         formData.append("product", thumbnail.files[0]);
 
         const response = await axios.post(
-          "http://localhost:4000/uploadImg",
+          "https://e-commerce-backend-dw6l.onrender.com/uploadImg",
           formData,
           {
             headers: {
@@ -50,7 +50,7 @@ const AddProduct = () => {
         if (responseData.sucess) {
           product.image = responseData.image_url;
           const addProductRes = await axios
-            .post("http://localhost:4000/allProductsAdd", product)
+            .post("https://e-commerce-backend-dw6l.onrender.com/allProductsAdd", product)
             .then((res) => {
               alert("Product Added");
               console.log("Server Response:", res.data);
@@ -92,7 +92,7 @@ const AddProduct = () => {
 
       // Make the first Axios request for image upload
       const response = await axios.post(
-        "http://localhost:4000/uploadImg",
+        "https://e-commerce-backend-dw6l.onrender.com/uploadImg",
         formData,
         {
           headers: {
@@ -110,7 +110,7 @@ const AddProduct = () => {
 
         // Make the second Axios request to add the product
         const addProductRes = await axios.post(
-          "http://localhost:4000/allProductsAdd",
+          "https://e-commerce-backend-dw6l.onrender.com/allProductsAdd",
           product
         );
         console.log("Server Response:", addProductRes.data);

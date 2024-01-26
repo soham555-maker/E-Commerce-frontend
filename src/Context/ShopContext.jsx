@@ -19,7 +19,7 @@ const ShopContextProvider = (props) => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/getAllProducts"
+          "https://e-commerce-backend-dw6l.onrender.com/getAllProducts"
         );
         if (response.data.success) {
           setall_product(response.data.products);
@@ -33,7 +33,7 @@ const ShopContextProvider = (props) => {
     const fetchcart = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:4000/getcart",
+          "https://e-commerce-backend-dw6l.onrender.com/getcart",
           {
             token: localStorage.getItem("auth-token")
           }
@@ -64,7 +64,7 @@ const ShopContextProvider = (props) => {
   const addToCart = async (itemId) => {
     try {
       const productId = itemId;
-      const apiEndpoint = "http://localhost:4000/addtocart";
+      const apiEndpoint = "https://e-commerce-backend-dw6l.onrender.com/addtocart";
       const authToken = localStorage.getItem("auth-token");
 
       const response = await axios.post(
@@ -93,7 +93,7 @@ const ShopContextProvider = (props) => {
   const removeFromCart = async (itemId) => {
     try {
       const productId = itemId;
-      const apiEndpoint = "http://localhost:4000/removefromcart";
+      const apiEndpoint = "https://e-commerce-backend-dw6l.onrender.com/removefromcart";
       const authToken = localStorage.getItem("auth-token");
 
       const response = await axios.post(
