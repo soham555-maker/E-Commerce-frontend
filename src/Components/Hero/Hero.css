@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero{
+    height: 100vh;
+    /* width: 100vw; */
+    background-color: var(--dominant);
+    /* background: linear-gradient( var(--dominant), var(--semi-dominanat) 100%); */
+    display: grid;
+    grid-template-columns: 49vw 49vw;
+    color: var(--semi-dominanat);
+}
+.hero-left{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.Text-small{
+    font-size: 1vmax;
+    font-weight: 600;
+    font-family: Poppins;
+}
+.Text-big{
+    font-size: 5.5vmax;
+    font-family: Poppins;
+}
+.hand-icon{
+    height: 90px;
+}
+.btn{
+    display: inline-block;
+    background-color: var(--button);
+    font-size: 1.2vmax;
+    font-weight: 500;
+    padding: 18px 45px;
+    border-radius: 100px;
+    margin-top: 25px;
+    align-items: center;
+    cursor: pointer;
+    /* gap: 20px */
+}
+.btn p{
+    display: inline-block;
+    padding-right: 10px;
+}
+.btn:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.btn:active{
+    opacity: 100%;
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
+
+
+.hero-right{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.hero-right img{
+    max-height: 100%;
+    max-width: 100%;
+}

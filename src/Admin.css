@@ -1,0 +1,10 @@
+.adminHome{
+    display: flex;
+}
+
+@media(max-width: 800px){
+    .adminHome{
+        color: red;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,32 @@
+.description-container{
+    width: 81vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 100px 9vw 20px 9vw;
+}
+.descriptionbox-titles{
+    display: flex;
+    gap: 0px;
+}
+.description{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 1px;
+    font-weight: 600;
+}
+.reviews{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 1px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+}
+.description-text{
+    width: 82vw;
+    padding: 40px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-weight: 400;
+}

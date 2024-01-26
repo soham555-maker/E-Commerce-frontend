@@ -1,0 +1,126 @@
+.cartitems{
+    padding-top: 92px;
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.5vw;
+
+}
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 0px;
+    color: var(--dominant-offset);
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartitems hr{
+    height: 2px;
+    background-color: var(--dominant-offset);
+    border: #afc1c9;
+}
+.cartitems-format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.cartitems-format p{
+    padding: 0px 10px;
+}
+.cartitems-format-rmv-icn{
+    cursor: pointer;
+    margin: 0px 40px;
+    width: 15px;
+}
+.cartitems-format-image{
+    width: 40%;
+}
+.cartitems-quantity{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: var(--semi-dominanat);
+    border:1px solid #c1d6dfe3;
+    border-radius: 3px;
+    padding: 15px 0px;
+}
+
+.cartitems-down{
+    padding-top: 50px;
+}
+.cartitems-total{
+    display: flex;
+    width: 82vw;
+}
+.cartitems-total-left{
+    width: 50%;
+    padding: 20px;
+}
+.cartitems-total-left h1{
+    padding-bottom: 40px;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-size: 17px;
+}
+.checkout-cart{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--semi-dominanat);
+    padding: 10px;
+    border-radius: 2px;
+    background-color: var(--button);
+    border: 0px;
+}
+.checkout-cart:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.checkout-cart:active{
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+.cartitems-promocode{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50%;
+    padding: 30px;
+}
+.cartitems-promocode-inside{
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    width: 450px;
+    background-color: #d5e8f1
+}
+.cartitems-promocode-inside input{
+    outline: none;
+    width: 300px ;
+    background-color: #d5e8f1;
+    border: none;
+}
+.cartitems-promocode-inside button{
+    border: none;
+    outline: none;
+    background-color:black;
+    color: var(--semi-dominanat);
+    padding: 20px 51px 20px 51px;
+    margin: 0px;
+}
+.cartitems-promocode-inside button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.cartitems-promocode-inside button:active{
+    transform: scale(0.9);
+    transition: all 0.2s;
+}

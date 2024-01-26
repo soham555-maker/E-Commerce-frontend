@@ -1,0 +1,42 @@
+.Collections {
+    padding: 70px 0px;
+    /* width: 100vw; */
+    /* height: 60vh; */
+    /* overflow: hidden; */
+    display: flex;
+    /* width: 100vw; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--semi-dominanat);
+    font-family: Poppins;
+    /* background: linear-gradient(var(--semi-dominanat), var(--dominant) 80%); */
+}
+
+.Collections h1 {
+    font-size: 3vmax;
+}
+
+.Collections hr {
+    margin: 10px;
+    width: 20vmax;
+    height: 7px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.items {
+    /* width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px; */
+    display: grid;
+    grid-template-columns: 21vw 21vw 21vw 21vw;
+    margin-top: 50px;
+}

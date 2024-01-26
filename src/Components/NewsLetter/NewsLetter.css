@@ -1,0 +1,51 @@
+.outer-newsletter-container{
+    padding: 100px, 0px;
+    background-color: var(--semi-dominanat);
+    /* width: 100vw; */
+}
+
+.newsletters{
+    display: flex;
+    flex-direction: column;
+    width: 82vw;
+    gap: 0px;
+    /* height: 40vh; */
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient( var(--dominant-gradient), var(--semi-dominanat));
+}
+
+.Text-medium{
+    font-weight: 600;
+    font-size: 3vmax ;
+    font-family: Poppins;
+}
+
+.newsletters-form{
+    padding-top: 40px;
+    margin-bottom: 120px;
+}
+.newsletters-form form input{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px ;
+    padding: 20px;
+    width: 350px;
+
+    border: 0px;
+}
+.newsletters-form form input:active{
+    border: 0px;
+    outline: 0px;
+}
+#suscribe{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px ;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px ;
+    width: 125px;
+    padding: 17px;
+    border:0px;
+    cursor: pointer;
+}

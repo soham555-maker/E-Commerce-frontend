@@ -1,0 +1,19 @@
+:root{
+  --dominant: rgb(89,39,229);
+  --dominant-offset: #3600ca;
+  --dominant-gradient: rgba(89,39,229,0.5);
+  --semi-dominanat: #DEF4FE;
+  --semi-dominanat-offset: #cee9f5;
+  --offset: rgba(95, 251, 241,0.5);
+  --button: #C03031;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+}
+
+body{
+  background-color: var(--semi-dominanat);
+}

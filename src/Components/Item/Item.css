@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.Item{
+    /* background-color: lightgray; */
+    width: 20vw;
+    padding: 20px;
+    /* display: inline-block; */
+}
+.Item img{
+    max-width: 100%;
+}
+.Item:hover{
+    transform: scale(1.025);
+    transition: all 0.6s;
+}
+.Item:active{
+    transform: scale(0.975);
+    transition: all 0.2s;
+}
+.prices{
+    display: flex;
+    gap: 10px;
+}
+.old-price p{
+    /* font-weight: 600 ; */
+    text-decoration: line-through;
+}
+.new-price p{
+    font-weight: 600 ;
+}

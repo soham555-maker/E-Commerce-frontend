@@ -1,0 +1,37 @@
+.outer-offer-container{
+    padding: 100px, 0px;
+    background-color: var(--semi-dominanat);
+    /* width: 100vw; */
+}
+
+.offers{
+    display: flex;
+    width: 82vw;
+    /* height: 40vh; */
+    margin: 0px auto;
+    background: linear-gradient( var(--dominant-gradient), var(--semi-dominanat));
+}
+.offer-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.checkout{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 10px;
+}
+.offer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.offer-right img{
+    max-width: 100%;
+}
