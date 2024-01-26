@@ -213,7 +213,7 @@ const AddProduct = () => {
           id="file-input"
           hidden
         />
-        <button className="addproduct-btn" onClick={handleAddProduct}>
+        <button className="addproduct-btn" onClick={addAllProducts}>
           ADD
         </button>
       </div>
