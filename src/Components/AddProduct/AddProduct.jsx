@@ -38,7 +38,7 @@ const AddProduct = () => {
         formData.append("product", thumbnail.files[0]);
 
         const response = await axios.post(
-          "https://e-commerce-backend-dw6l.onrender.com/uploadImg",
+          `${import.meta.env.VITE_ENDPOINT}uploadImg`,
           formData,
           {
             headers: {
@@ -50,7 +50,7 @@ const AddProduct = () => {
         if (responseData.sucess) {
           product.image = responseData.image_url;
           const addProductRes = await axios
-            .post("https://e-commerce-backend-dw6l.onrender.com/allProductsAdd", product)
+            .post(`${import.meta.env.VITE_ENDPOINT}allProductsAdd`, product)
             .then((res) => {
               alert("Product Added");
               console.log("Server Response:", res.data);
@@ -92,7 +92,7 @@ const AddProduct = () => {
 
       // Make the first Axios request for image upload
       const response = await axios.post(
-        "https://e-commerce-backend-dw6l.onrender.com/uploadImg",
+        `${import.meta.env.VITE_ENDPOINT}uploadImg`,
         formData,
         {
           headers: {
@@ -110,7 +110,7 @@ const AddProduct = () => {
 
         // Make the second Axios request to add the product
         const addProductRes = await axios.post(
-          "https://e-commerce-backend-dw6l.onrender.com/allProductsAdd",
+          `${import.meta.env.VITE_ENDPOINT}allProductsAdd`,
           product
         );
         console.log("Server Response:", addProductRes.data);
@@ -147,7 +147,6 @@ const AddProduct = () => {
       }
 
       // Optional: Provide a final success message or perform additional actions
-      alert("All Products Added Successfully!");
     } catch (error) {
       console.error("Error:", error);
       // Handle any errors that may occur during the process
@@ -213,7 +212,7 @@ const AddProduct = () => {
           id="file-input"
           hidden
         />
-        <button className="addproduct-btn" onClick={handleAddProduct}>
+        <button className="addproduct-btn" onClick={addAllProducts}>
           ADD
         </button>
       </div>

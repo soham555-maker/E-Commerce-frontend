@@ -17,9 +17,10 @@ const ShopContextProvider = (props) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
+      // console.log(import.meta.env.VITE_ENDPOINT)
       try {
         const response = await axios.get(
-          "https://e-commerce-backend-dw6l.onrender.com/getAllProducts"
+          `${import.meta.env.VITE_ENDPOINT}getAllProducts`
         );
         if (response.data.success) {
           setall_product(response.data.products);
@@ -33,7 +34,7 @@ const ShopContextProvider = (props) => {
     const fetchcart = async () => {
       try {
         const response = await axios.post(
-          "https://e-commerce-backend-dw6l.onrender.com/getcart",
+          `${import.meta.env.VITE_ENDPOINT}getcart`,
           {
             token: localStorage.getItem("auth-token")
           }
@@ -64,7 +65,7 @@ const ShopContextProvider = (props) => {
   const addToCart = async (itemId) => {
     try {
       const productId = itemId;
-      const apiEndpoint = "https://e-commerce-backend-dw6l.onrender.com/addtocart";
+      const apiEndpoint = `${import.meta.env.VITE_ENDPOINT}addtocart`;
       const authToken = localStorage.getItem("auth-token");
 
       const response = await axios.post(
@@ -93,7 +94,7 @@ const ShopContextProvider = (props) => {
   const removeFromCart = async (itemId) => {
     try {
       const productId = itemId;
-      const apiEndpoint = "https://e-commerce-backend-dw6l.onrender.com/removefromcart";
+      const apiEndpoint = `${import.meta.env.VITE_ENDPOINT}removefromcart`;
       const authToken = localStorage.getItem("auth-token");
 
       const response = await axios.post(

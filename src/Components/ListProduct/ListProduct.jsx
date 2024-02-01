@@ -8,7 +8,7 @@ const ListProduct = () => {
   const [allProducts, setAllProducts] = useState([]);
 
   const fetchInfo = async () => {
-    await axios.get("https://e-commerce-backend-dw6l.onrender.com/getAllProducts").then((res) => {
+    await axios.get(`${import.meta.env.VITE_ENDPOINT}getAllProducts`).then((res) => {
       setAllProducts(res.data.products);
     });
   };
@@ -18,7 +18,7 @@ const ListProduct = () => {
   }, []);
 
   const removeProduct = async (id)=>{
-    await axios.post("https://e-commerce-backend-dw6l.onrender.com/removeProduct", {id:id}).then(async (res) => {
+    await axios.post(`${import.meta.env.VITE_ENDPOINT}removeProduct`, {id:id}).then(async (res) => {
       if(res.data.success){
         await fetchInfo();
         
