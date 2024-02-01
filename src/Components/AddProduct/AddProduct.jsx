@@ -147,6 +147,7 @@ const AddProduct = () => {
       }
 
       // Optional: Provide a final success message or perform additional actions
+      alert("All Products Added Successfully!");
     } catch (error) {
       console.error("Error:", error);
       // Handle any errors that may occur during the process
@@ -212,7 +213,7 @@ const AddProduct = () => {
           id="file-input"
           hidden
         />
-        <button className="addproduct-btn" onClick={addAllProducts}>
+        <button className="addproduct-btn" onClick={handleAddProduct}>
           ADD
         </button>
       </div>
