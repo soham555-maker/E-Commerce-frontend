@@ -22,7 +22,7 @@ const LoginSignup = () => {
 
     try {
       const endpoint = isLogin ? 'https://e-commerce-backend-dw6l.onrender.com/login' : 'https://e-commerce-backend-dw6l.onrender.com/signup';
-      if (formData.name === '' || formData.email === '' || formData.password === '') {
+      if ((formData.email === '' || formData.password === '') || (!isLogin && formData.name === '') ){
         alert('Please fill all the fields');
       }else{
       const response = await axios.post(endpoint, formData);
