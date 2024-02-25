@@ -1,10 +1,9 @@
-.spacer{
+/* .spacer{
     height: 100px;
     background-color: var(--semi-dominanat);
 }
 
 .Footer{
-    /* background: linear-gradient(var(--semi-dominanat), var(--dominant-gradient),var(--dominant) 70%); */
     background-color: var(--dominant);
     display: flex;
     justify-content: center;
@@ -54,4 +53,105 @@
 }
 small{
     font-size: x-small;
+} */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* General Styles */
+.spacer {
+    height: 100px;
+    background-color: var(--semi-dominant);
+}
+
+.Footer {
+    background-color: var(--dominant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--semi-dominant);
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 5px;
+    color: var(--semi-dominanat);
+}
+
+.footer-logo {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.Footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+.Footer ul li {
+    cursor: pointer;
+}
+
+.Footer ul li:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.Footer ul li:active {
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
+.footer-icons {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.Footer hr {
+    width: 99%;
+    border-color: var(--dominant-offset);
+    background-color: var(--dominant-offset);
+    margin: 0 0 10px 0;
+    height: 2px;
+    border-radius: 100px;
+    border: 0;
+}
+
+small {
+    font-size: x-small;
+}
+
+/* Media Queries */
+@media (max-width: 1280px) {
+    .Footer ul li {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-logo {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Footer ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-icons {
+        font-size: 1.2rem;
+    }
+}
+

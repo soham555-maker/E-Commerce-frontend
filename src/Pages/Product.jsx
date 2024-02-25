@@ -13,10 +13,10 @@ const Product = () => {
 
   return (
     <div style={{paddingTop: "92px"}} >
-      <Breadcrums product={product}/>
+      {/* <Breadcrums product={product}/> */}
       <ProductDisplay product={product}/>
-      <DescriptionBox />
-      <RelatedProducts/>
+      {/* <DescriptionBox /> */}
+      {/* <RelatedProducts/> */}
     </div>
   )
 }

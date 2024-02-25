@@ -17,7 +17,7 @@ const Footer = () => {
             <h1 className="Text-medium">SHOPPER</h1>
           </div>
         </Link>
-        <ul>
+        <ul className="footer-tags">
           <li>Company</li>
           <li>Products</li>
           <li>Offices</li>

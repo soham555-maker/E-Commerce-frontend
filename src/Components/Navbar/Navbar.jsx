@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../Assets/logo.png";
@@ -9,6 +9,10 @@ import { MdOutlineArrowDropDownCircle } from "react-icons/md";
 
 const Navbar = ({ getCatagory2 }) => {
   const [catagories, setCatagories] = useState("shop");
+  useEffect(() => {
+    let cu = window.location.pathname.split("/")[1];
+    setCatagories(cu);
+  }, []);
   const { getTotal } = useContext(ShopContext);
   const menuRef = useRef();
 
@@ -19,7 +23,7 @@ const Navbar = ({ getCatagory2 }) => {
   };
 
   return (
-    <div>
+    <div className="nav-outer-container">
       <nav>
         <Link
           className="link"
@@ -54,40 +58,40 @@ const Navbar = ({ getCatagory2 }) => {
                   {catagories === "shop" && <hr />}
                 </li>
               </Link>
-              <Link className="link" to={"/mens"}>
+              <Link className="link" to={"/men"}>
                 <li
                   className="catagories"
                   onClick={() => {
-                    setCatagories("mens");
-                    getCatagory2("mens");
+                    setCatagories("men");
+                    getCatagory2("men");
                   }}
                 >
-                  Mens
-                  {catagories === "mens" && <hr />}
+                  Men
+                  {catagories === "men" && <hr />}
                 </li>
               </Link>
-              <Link className="link" to={"/womens"}>
+              <Link className="link" to={"/women"}>
                 <li
                   className="catagories"
                   onClick={() => {
-                    setCatagories("womens");
-                    getCatagory2("womens");
+                    setCatagories("women");
+                    getCatagory2("women");
                   }}
                 >
-                  Womens
-                  {catagories === "womens" && <hr />}
+                  Women
+                  {catagories === "women" && <hr />}
                 </li>
               </Link>
-              <Link className="link" to={"/kids"}>
+              <Link className="link" to={"/kid"}>
                 <li
                   className="catagories"
                   onClick={() => {
-                    setCatagories("kids");
-                    getCatagory2("kids");
+                    setCatagories("kid");
+                    getCatagory2("kid");
                   }}
                 >
-                  Kids
-                  {catagories === "kids" && <hr />}
+                  Kid
+                  {catagories === "kid" && <hr />}
                 </li>
               </Link>
             </ul>

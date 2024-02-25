@@ -21,20 +21,20 @@ const ProductDisplay = () => {
     <div className="productdisplay">
       <div className="productdisplay">
       <div className="productdisplay-left">
-        <div className="img-list-1">
-          <img src={product.image} style={{ height: "100%" }} alt="" />
+        <div className="img-list-1 sml-img">
+          <img src={product.image} className="sml-img"  alt="" />
         </div>
-        <div className="img-list-2">
-          <img src={product.image} style={{ height: "100%" }} alt="" />
+        <div className="img-list-2 ">
+          <img src={product.image} className="sml-img"  alt="" />
         </div>
-        <div className="img-list-3">
-          <img src={product.image} style={{ height: "100%" }} alt="" />
+        <div className="img-list-3 ">
+          <img src={product.image} className="sml-img"  alt="" />
         </div>
-        <div className="img-list-4">
-          <img src={product.image} style={{ height: "100%" }} alt="" />
+        <div className="img-list-4 ">
+          <img src={product.image} className="sml-img"  alt="" />
         </div>
-        <div className="main-img">
-          <img src={product.image} style={{ width: "100%" }} alt="" />
+        <div className="main-img" >
+          <img src={product.image} className="big-img"  alt="" />
         </div>
       </div>
       <div className="productdisplay-right">

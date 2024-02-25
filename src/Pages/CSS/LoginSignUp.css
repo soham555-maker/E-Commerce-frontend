@@ -55,7 +55,7 @@
     transition: all 0.2s;
 } */
 
-.loginsignup {
+/* .loginsignup {
     padding-top: 192px;
     height: 48vh;
     width: 99vw;
@@ -136,4 +136,132 @@
 .loginsignup-login-text:active {
     font-size: 18px;
     transition: all 0.2s;
+} */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* General Styles */
+.loginsignup {
+    padding-top: 192px;
+    height: 60vh;
+    width: 98vw;
+    background-color: var(--semi-dominanat);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginsignup-container {
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--dominant);
+    color: var(--semi-dominanat);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.loginsignup-container h1 {
+    font-size: 36px;
+}
+
+.loginsignup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loginsignup-form input {
+    outline: none;
+    width: 300px;
+    max-width: 400px;
+    background-color: var(--semi-dominanat);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.loginsignup-form input::placeholder {
+    font-weight: 100;
+}
+
+.loginsignup-form button {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+    padding: 15px 20px;
+    background-color: rgb(255, 26, 26);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.loginsignup-form button:hover {
+    background-color: #d50000;
+}
+
+.loginsignup-login-text {
+    color: rgb(255, 26, 26);
+    cursor: pointer;
+}
+
+.loginsignup-login-text:hover {
+    font-size: 19px;
+    transition: all 0.5s;
+}
+
+.loginsignup-login-text:active {
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+/* Media Queries */
+@media (max-width: 1280px) {
+    .loginsignup-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .loginsignup-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .loginsignup-form input,
+    .loginsignup-form button {
+        max-width: 300px;
+    }
+    .loginsignup-container h1 {
+        font-size: 26px;
+    }
+    .loginsignup-form button {
+        max-width: 100px;
+        margin-top: 10px;
+        padding: 15px 2px;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .loginsignup-form input,
+    .loginsignup-form button {
+        max-width: 250px;
+    }
+}
+

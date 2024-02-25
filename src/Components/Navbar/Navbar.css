@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0px;
     padding: 0px;
 }
@@ -17,14 +17,13 @@
 }
 nav {
     position: fixed;
-    width: 100%;
+    width: 99.5vw;
     background-color: var(--dominant);
     color: var(--semi-dominanat);
     display: flex;
     align-items: center;
     justify-content: space-around;
     z-index: 1;
-    /* height: 10vh; */
 }
 
 .nav-logo{
@@ -80,11 +79,9 @@ nav {
 
 .catagories hr {
     margin-top: 6px;
-    /* width: 50%; */
     font-weight: 900;
     transition: all 1s;
     border-color: var(--semi-dominanat);
-    /* opacity: 0%; */
 }
 
 .catagories:hover {
@@ -113,11 +110,9 @@ nav {
     border: 0px;
     border-radius: 100px;
     cursor: pointer;
-    /* margin-top: 25px; */
     align-items: center;
     color: var(--semi-dominanat);
     opacity: 90%;
-    /* gap: 20px */
 }
 
 .login-btn p {
@@ -203,7 +198,6 @@ nav {
 
     .login-btn {
         font-size: 18px;
-        /* margin-left: 20px; */
         font-weight: 580;
         padding: 12px 3vw;
         align-items: center;
@@ -226,7 +220,6 @@ nav {
 
     .nav-logo p {
         font-size: 33px;
-        /* text-align: center; */
     }
     .nav-logo img{
         width: 45px;
@@ -239,7 +232,6 @@ nav {
 
     .login-btn {
         font-size: 16px;
-        /* margin-left: 20px; */
         font-weight: 580;
         padding: 8px 3vw;
         align-items: center;
@@ -281,20 +273,17 @@ nav {
         position: relative;
         justify-content: center;
         align-items: center;
-        /* background-color: var(--dominant); */
     }
     .nav-catagories{
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
     }
     .navbar-menu-visible{
         display: flex;
         background-color: var(--dominant);
         flex-direction: column;
         align-items: center;
-        left: 46vw;
         padding: 20px;
         top: 64px;
         position: absolute;
@@ -340,7 +329,6 @@ nav {
 
     .login-btn {
         font-size: 12px;
-        /* margin-left: 20px; */
         font-weight: 580;
         padding: 7px 3vw;
         align-items: center;
@@ -361,3 +349,105 @@ nav {
         height: 12px;
     }
 }
+
+@media(max-width:500px) {
+    nav {
+        padding: 5px 0px;
+        margin: 0px;
+    }
+    .nav-dropdown{
+        display: block;
+        rotate: -90deg;
+        transition: 0.5s;
+        color: var(--semi-dominanat);
+        cursor: pointer;
+    }
+    .navMenu {
+        display: none;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-catagories{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-menu-visible{
+        display: flex;
+        background-color: var(--dominant);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        top: 46px;
+        position: absolute;
+    }
+    .navbar-menu-visible ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav-dropdown.open{
+        rotate: 0deg;
+        transition: 0.5s;
+    }
+    .nav-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-logo p {
+        font-size: 18px;
+    }
+    .nav-logo img{
+        width: 30px;
+    }
+
+    .nav-logo-Admin {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-logo-Admin div p {
+        font-size: 18px;
+    }
+    .nav-logo-Admin img{
+        width: 30px;
+    }
+
+    .login-btn {
+        font-size: 12px;
+        font-weight: 580;
+        padding: 7px 3vw;
+        align-items: center;
+        color: var(--semi-dominanat);
+    }
+    .nav-login{
+        gap: 1vw;
+    }
+    .cart-icon{
+        top:7px;
+        width: 18px;
+    }
+    .cart-products-counter{
+        top: 15px;
+        right: 1px;
+        margin-left: 20px;
+        font-size: 8px;
+        width: 6px;
+        height: 6px;
+    }
+} 
+
+
+
+
+
+
+

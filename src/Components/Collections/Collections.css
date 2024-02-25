@@ -1,16 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
 .Collections {
-    padding: 70px 0px;
-    /* width: 100vw; */
-    /* height: 60vh; */
-    /* overflow: hidden; */
+    padding: 70px 0;
+    padding-bottom: 100px;
     display: flex;
-    /* width: 100vw; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--semi-dominanat);
+    background-color: var(--semi-dominant);
     font-family: Poppins;
-    /* background: linear-gradient(var(--semi-dominanat), var(--dominant) 80%); */
 }
 
 .Collections h1 {
@@ -25,18 +28,34 @@
     background-color: black;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 .items {
-    /* width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 30px; */
     display: grid;
     grid-template-columns: 21vw 21vw 21vw 21vw;
+    gap: 20px;
     margin-top: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 1280px) {
+    .items {
+        grid-template-columns: 21vw 21vw 21vw 21vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Collections h1 {
+        font-size: 2.5vmax;
+    }
+}
+
+@media (max-width: 800px) {
+    .items {
+        grid-template-columns: 21vw 21vw 21vw 21vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .items {
+        grid-template-columns: 47vw 47vw;
+    }
 }

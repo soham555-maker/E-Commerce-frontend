@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Outlet } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from './Components/Footer/Footer';
@@ -6,7 +6,6 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   const [count, setCount] = useState("shop");
-
   return (
     <>
       <header>

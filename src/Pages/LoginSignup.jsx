@@ -22,7 +22,9 @@ const LoginSignup = () => {
 
     try {
       const endpoint = isLogin ? 'https://e-commerce-backend-dw6l.onrender.com/login' : 'https://e-commerce-backend-dw6l.onrender.com/signup';
-console.log(formData)
+      if (formData.name === '' || formData.email === '' || formData.password === '') {
+        alert('Please fill all the fields');
+      }else{
       const response = await axios.post(endpoint, formData);
 
       const data = await response.data;
@@ -37,7 +39,7 @@ console.log(formData)
         // Handle login/signup failure, show error message to the user
         alert(data.error)
         console.error('Authentication failed:', data.error);
-      }
+      }}
     } catch (error) {
       alert("Account already exists")
       console.error('Error during authentication:', error);
