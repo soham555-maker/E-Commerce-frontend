@@ -286,19 +286,25 @@
     grid-template-rows: 1fr 1fr;
   } 
   .cart-product-name{
-    width: 10px;
+    width: 150px;
+  }
+  .cart-product-price{
+    text-align: center;
+  }
+  .cartitems-format img:first-child{
+    width: 50px;
   }
 }
 
 @media (max-width: 500px) {
-  .cartitems-format-main,
+  /* .cartitems-format-main,
   .cartitems-format {
     grid-template-columns: 0.5fr 2fr;
-  }
+  } */
 
   .cartitems-format-main p,
   .cartitems-format p {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   .cartitems-quantity {

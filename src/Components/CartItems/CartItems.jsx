@@ -23,7 +23,7 @@ const CartItems = () => {
               <div className="cartitems-format">
                 <img src={p.image} alt=""  className="cartitems-format-image"/>
                 <p className="cart-product-name">{p.name}</p>
-                <p>${p.new_price}</p>
+                <p className="cart-product-price">${p.new_price}</p>
                 <p className="cartitems-quantity" >{cartItems[p.id]}</p>
                 <p>${p.new_price*cartItems[p.id]}</p>
                 <img src={remove_icon} onClick={()=>{removeFromCart(p.id)}} className="cartitems-format-rmv-icn" alt="" />
