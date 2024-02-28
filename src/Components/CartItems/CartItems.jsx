@@ -22,13 +22,14 @@ const CartItems = () => {
             <div key={i}>
               <div className="cartitems-format">
                 <img src={p.image} alt=""  className="cartitems-format-image"/>
-                <p>{p.name}</p>
+                <p className="cart-product-name">{p.name}</p>
                 <p>${p.new_price}</p>
                 <p className="cartitems-quantity" >{cartItems[p.id]}</p>
                 <p>${p.new_price*cartItems[p.id]}</p>
                 <img src={remove_icon} onClick={()=>{removeFromCart(p.id)}} className="cartitems-format-rmv-icn" alt="" />
               </div>
               <hr />
+              
             </div>
           );
         }
@@ -59,7 +60,7 @@ const CartItems = () => {
                 <p>If you have a promo code, Enter it here</p>
                 <div className="cartitems-promocode-inside">
                     <input type="text" placeholder="promo code" />
-                    <button>Submit</button>
+                    <button className="cart-submit-btn">Submit</button>
                 </div>
             </div>
         </div>

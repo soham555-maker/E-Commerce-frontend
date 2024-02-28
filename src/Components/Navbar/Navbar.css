@@ -426,18 +426,21 @@ nav {
         font-weight: 580;
         padding: 7px 3vw;
         align-items: center;
+        margin-right: 10px;
         color: var(--semi-dominanat);
     }
     .nav-login{
         gap: 1vw;
+        margin-right: 10px;
     }
     .cart-icon{
-        top:7px;
-        width: 18px;
+        top:2px;
+        width: 22px;
+        margin: 0px 5px 0px 0px;
     }
     .cart-products-counter{
-        top: 15px;
-        right: 1px;
+        top: 10px;
+        right: 7.5px;
         margin-left: 20px;
         font-size: 8px;
         width: 6px;
